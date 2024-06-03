@@ -63,13 +63,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MVVM\Pages\FinalPage.xaml">
+	  <Compile Update="AppShellSL.xaml.cs">
+	    <DependentUpon>AppShellSL.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="AppSL.xaml.cs">
+	    <DependentUpon>AppSL.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MainPageSL.xaml.cs">
+	    <DependentUpon>MainPageSL.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVVM\PagesSL\FinalPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\Pages\Page2.xaml">
+	  <MauiXaml Update="MVVM\PagesSL\Page2.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MVVM\Pages\StartPage.xaml">
+	  <MauiXaml Update="MVVM\PagesSL\StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
